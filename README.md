@@ -3,7 +3,7 @@ Implementation of a Deep Q Network to solve Open AI's GYM Environment
 
 Deep Q Learning - Lab
 Introduction:
-This notebook is a continuation of Andrew's Ng's Reinforcement Lab in the Coursera Machine Learning Specialty covering an implementation of a Deep Q Network model(Mnih, 2015) to solve Open AI's Lunar Landar environment.
+This notebook is a continuation of Andrew's Ng's Reinforcement Learning Lab in the Coursera Machine Learning Specialty covering an implementation of a Deep Q Network model(Mnih, 2015) to solve Open AI's Lunar Landar environment.
 In addition to the implementation of the lab - the following ideas are explored:
 
 1. The effect of modifying the epsilon decay function on training stability
