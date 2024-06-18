@@ -10,6 +10,8 @@ import matplotlib.ticker as mticker
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import keras
+from keras import layers
 from statsmodels.iolib.table import SimpleTable
 
 
@@ -23,9 +25,36 @@ EPS_ARR = []
 
 random.seed(SEED)
 
+# Input List of Tensors and Output Condensed Numpy Arr
+def tf_numpy_list(list_tf, layer_num):
+    if layer_num == 1: 
+        arr = np.empty((1,8))
+    else:
+        arr = np.empty((1,64))
+    count = 0
+    for i in list_tf:
+        if count == 0: 
+            arr[:] = i.numpy()
+        else:
+            arr = np.concatenate((arr, i.numpy()), axis = 1)
+        count+=1
+        if count > 10000: 
+            break
+    return arr
+
 # Return the epsilon array to track value of epsilon across training
 def plot_epsilon():
     return EPS_ARR
+
+# Return the output of the First BN and Second BN Layer (ensure positive values)
+def intermediate_output(q_network, data):
+    layer_name = "BN1"
+    layer_name2 = "BN2"
+    interm_layer_model = keras.Model(inputs = q_network.inputs, outputs = q_network.get_layer(layer_name).output)
+    interm_layer_model2 = keras.Model(inputs = q_network.inputs, outputs = q_network.get_layer(layer_name2).output)
+    output_arr = interm_layer_model(data)
+    output_arr2 = interm_layer_model2(data)
+    return (output_arr, output_arr2)
 
 
 def get_experiences(memory_buffer):
