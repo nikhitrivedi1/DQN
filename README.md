@@ -11,10 +11,7 @@ In addition to the implementation of the lab - the following ideas are explored:
 
 
 <div align = 'center'>
-    <video controls>
-    <source src="videos/rl-video-episode-2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+    <img src="/rl-video-episode-2-ezgif.com-video-to-gif-converter.gif" alt="Trained Lunar Lander Rendering" width="500">
 </div>
 
 
