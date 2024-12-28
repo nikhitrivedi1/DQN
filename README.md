@@ -12,8 +12,8 @@ In addition to the implementation of the lab - the following ideas are explored:
 
 <div align = 'center'>
     <video controls>
-    <source src="videos/rl-video-episode-2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+        <source src="videos/rl-video-episode-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
 </div>
 
