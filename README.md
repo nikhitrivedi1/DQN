@@ -10,9 +10,11 @@ In addition to the implementation of the lab - the following ideas are explored:
 2. The effect of incorporating batch normalization on training stability and task completion time - (Iofee & Szegedy, 2015)
 
 
+
 <div align = 'center'>
     <img src="/rl-video-episode-2-ezgif.com-video-to-gif-converter.gif" alt="Trained Lunar Lander Rendering" width="500">
 </div>
+
 
 
 Deep Q Networks (DQN) (Mnih, 2015)
