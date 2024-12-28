@@ -10,12 +10,10 @@ In addition to the implementation of the lab - the following ideas are explored:
 2. The effect of incorporating batch normalization on training stability and task completion time - (Iofee & Szegedy, 2015)
 
 
-<div align = 'center'>
-    <video controls>
-        <source src="videos/rl-video-episode-2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+<video controls>
+    <source src="videos/rl-video-episode-2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 
 Deep Q Networks (DQN) (Mnih, 2015)
